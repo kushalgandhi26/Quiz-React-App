@@ -13,14 +13,14 @@ function Login() {
       }
       return (
             <div className="container">           
-                  <div class="row justify-content-center align-items-center" style={{height:'80vh'}}>
-                        <div class="container">
+                  <div className="row justify-content-center align-items-center" style={{height:'80vh'}}>
+                        <div className="container">
                         <h2 className="my-2">Quiz</h2>
-                              <div class="card">
-                                    <div class="card-body">
+                              <div className="card">
+                                    <div className="card-body">
                                           <form onSubmit={handleSubmit}>
                                           <label htmlFor="exampleFormControlInput1" className="form-label">Enter Your Name</label>
-                                                <div class="form-group">
+                                                <div className="form-group">
                                                       <input className="form-control"
                                                             id="exampleFormControlInput1"
                                                             onChange={(e) => { setName(e.target.value) }}

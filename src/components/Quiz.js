@@ -149,11 +149,10 @@ function Quiz() {
       } else if ((score / 5) * 100 < 60) {
             result = "Sorry you are not eligible to get best offer, please try again !!!";
       }
-      console.log(position);
       return (
             <>
                   <div className="container">
-                        {flag && <h6 className="my-3" style={{textAlign: 'end'}}>Time Remaining: {timer}</h6>}
+                        <h6 className="my-3" style={{textAlign: 'end'}}>Time Remaining: {flag && timer}</h6>
                         <Question key={b[position]._id} heading={b[position].questionText} options={b[position].answerOptions} position={position}/>
                         {position !== b.length - 1 && <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                               <button className="btn btn-primary" type="button" style={{width: '13%'}} onClick={() => {handleClick()}}>Next</button>

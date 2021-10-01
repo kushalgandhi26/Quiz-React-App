@@ -11,13 +11,12 @@ function TimerContextProvider(props) {
             const second = Math.floor((total / 1000) % 60);
             const minute = Math.floor((total / 1000 / 60) % 60);
             const hours = Math.floor((total / 1000 * 60 * 60) % 24);
-            const days = Math.floor(total / (1000 * 60 * 60 * 24));
             return {
-                  total, days, hours, minute, second
+                  total, hours, minute, second
             };
       }
       function startTimer(deadline) {
-            let { total, days, hours, minute, second } = getTimeRemainig(deadline);
+            let { total, hours, minute, second } = getTimeRemainig(deadline);
             if (total >= 0) {
                   setTimer(
                         (hours > 9 ? hours : '0' + hours) + ":" +
@@ -47,12 +46,13 @@ function TimerContextProvider(props) {
             return deadline;
       }
 
-      useEffect(() => {
+      useEffect(() => {    
             clearTimer(getDeadlineTime());
             return () => {
                   if (intervelRef.current)
                         clearInterval(intervelRef.current);
             }
+            // eslint-disable-next-line
       }, [])
 
       function reset() {
