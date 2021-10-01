@@ -1,7 +1,7 @@
 ## Quiz-App
 Here is the preview:
-![img](res/Screenshot (64).png)
-![img](res/Screenshot (65).png)
-![img](res/Screenshot (66).png)
-![img](res/Screenshot (67).png)
-![img](res/Screenshot (68).png)
+![img](screenshots/Screenshot4.png)
+![img](screenshots/Screenshot5.png)
+![img](screenshots/Screenshot6.png)
+![img](screenshots/Screenshot7.png)
+![img](screenshots/Screenshot8.png)
